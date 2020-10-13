@@ -1,0 +1,135 @@
+body {
+	 animation: color-change;
+	 animation-duration: 8s;
+	 animation-iteration-count: infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background: #bf4939;
+  }
+  25% {
+    background: #dbad2e;
+  }
+  50% {
+    background: #739e24;
+  }
+  75% {
+    background: #3187c4;
+  }
+  100% {
+    background: #7f3eab;
+  }
+}
+
+
+.container{
+	position: relative;
+	width: 90vw;
+	height: 20vh;
+	left: calc(50% - 45vw);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.version{
+	position: absolute;
+	left: 650px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 40px;
+}
+
+.title{
+	position: absolute;
+	top: 50px;
+	left: 550px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 900;
+	color: white;
+	font-size: 40px;
+
+}
+
+.author{
+	position: absolute;
+	top: 70px;
+	left: 750px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 20px;
+
+}
+
+.next{
+	position: absolute;
+	right: 20px;
+	top: 80px;
+	font-size: 40px;
+	animation: rotate;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+}
+
+@keyframes rotate {
+  0% {
+  	transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.back{
+	position: absolute;
+	left: 20px;
+	top: 80px;
+	font-size: 40px;
+	animation: rotate;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.stanza1, .stanza2, .stanza3{
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+}
+
+.stanza1:hover{
+	animation: scale-down;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+
+.stanza2:hover{
+	animation: scale-down;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+
+.stanza3:hover{
+	animation: scale-down;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+
+@keyframes scale-down {
+  0% {
+  	transform: scale(1);
+    transform-origin: 0% 50%;
+  }
+  100% {
+    transform: scale(0.5);
+    transform-origin: 0% 50%;
+  }
+}

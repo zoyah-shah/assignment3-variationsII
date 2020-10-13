@@ -1,0 +1,103 @@
+body {
+		margin: 0;
+    background: linear-gradient(270deg, #10a845, #e6dc89, #c42cdd);
+    background-size: 600% 600%;
+    -webkit-animation: background-gradient 18s ease infinite;
+    -moz-animation: background-gradient 18s ease infinite;
+    -o-animation: background-gradient 18s ease infinite;
+    animation: background-gradient 18s ease infinite;
+}
+@-webkit-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.container{
+	position: relative;
+	top: 120px;
+	left: calc(50% - 25vw);
+	height: 70vh;
+	width: 50vw;
+	background-color: rgba(255, 255, 255, 0.3);
+	/* opacity: 0.3; */
+	border-radius: 100px;
+}
+
+.title{
+	position: absolute;
+	left: 250px;
+	font-family: 'Heebo', sans-serif;
+	font-style: normal;
+  font-weight: 900;
+	font-size: 70px;
+	color: white;
+	opacity: 1.0;
+}
+
+.author{
+	position: absolute;
+	left: 300px;
+	top: 80px;
+	font-family: 'Heebo', sans-serif;
+	font-style: normal;
+  font-weight: 400;
+	font-size: 20px;
+	color: white;
+	opacity: 1.0;
+}
+
+ul{
+	position: absolute;
+	top: 150px;
+	right: 600px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: white;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.two{
+	position: absolute;
+	top: 150px;
+	display: inline-block;
+	right: 200px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+	font-style: normal;
+	color: white;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #7668ed;
+}
+
+a:visited {
+  color: #cc3139;
+  text-decoration: none;
+}

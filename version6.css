@@ -1,0 +1,116 @@
+body{
+	background: rgb(251,63,63);
+background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(224,70,252,1) 100%);
+}
+
+.container{
+	position: relative;
+	width: 90vw;
+	height: 20vh;
+	left: calc(50% - 45vw);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.version{
+	position: absolute;
+	left: 650px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 40px;
+}
+
+.title{
+	position: absolute;
+	top: 50px;
+	left: 550px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 900;
+	color: white;
+	font-size: 40px;
+}
+
+.author{
+	position: absolute;
+	top: 70px;
+	left: 750px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	color: white;
+	font-size: 20px;
+}
+
+.next{
+	position: absolute;
+	right: 20px;
+	top: 80px;
+	font-size: 40px;
+	animation-name: move-up;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.back{
+	position: absolute;
+	left: 20px;
+	top: 80px;
+	font-size: 40px;
+	animation-name: move-up;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes move-up {
+	0% {
+	    top: 80px;
+	  }
+	  50% {
+	    top: 1px;
+	  }
+	  100% {
+	    top: 80px;
+	  }
+}
+
+.poem{
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+}
+
+#letters{
+	font-size: 16px;
+	color: white;
+	font-weight: 400;
+}
+
+#letters:hover{
+	font-weight: 900;
+	color: black;
+}
+
+#letters:active{
+	font-weight: 300;
+	text-decoration: underline;
+	color: #9fcde3;
+}
+
+.version {
+	animation-name: tracking;
+	animation-duration:2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes tracking {
+  0% {
+    letter-spacing: 20px;
+  }
+  50% {
+    letter-spacing: normal;
+  }
+  100% {
+    letter-spacing: 20px;
+  }
+}
